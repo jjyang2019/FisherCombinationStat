@@ -18,6 +18,9 @@ FisherCombPval(P.values, Pheno, kendall.only = FALSE, miss.pval = FALSE,
 
 \item{verbose}{A logical variable indicates whether to show the details of analysis process}
 }
+\value{
+A vector for p-values derived from the Fisher combination statistic calculated from rows of P.values.
+}
 \description{
 This funciton calculate the omnibus p-values from the marginal p-values and outcome matrix
 }
@@ -35,4 +38,14 @@ FisherCombPval(P.values=pval,
               Pheno=pheno,
               kendall.only=FALSE,
               miss.pval=FALSE)
+
+}
+\references{
+\insertRef{Yang2017BB}{FisherCombinationStat}
+
+\insertRef{Buu2018SMiMR}{FisherCombinationStat}
+
+\insertRef{Yang2017PO}{FisherCombinationStat}
+
+\insertRef{Yang2016BB}{FisherCombinationStat}
 }
