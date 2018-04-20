@@ -5,7 +5,8 @@ Authors: James J Yang <jjyang@umich.edu>,
            Anne Buu <buu@umich.edu>
 Description: We implemented the Fisher combination statistic for multivariate test in GWAS.  The function in this package performs the methods described in Yang, Williams, and Buu (2017) <doi: 10.1186/s12859-017-1791-9>, Yang, Williams, and Buu (2017) <doi: 10.1371/journal.pone.0169893>, Buu, Williams, and Yang (2016) <doi: 10.1177/0962280216647422>, and Yang, Li, Williams, and Buu (2016) <doi: 10.1186/s12859-015-0868-6>.
 Depends: R (>= 3.4.4)
-Imports: mvtnorm
+Imports: mvtnorm, Rdpack
+RdMacros: Rdpack
 License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true
