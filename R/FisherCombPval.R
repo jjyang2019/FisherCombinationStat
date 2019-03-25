@@ -82,14 +82,7 @@ cal.cor.pearson <- function(x,y){
 ### internal functions
 
 cal.cor.kendall <- function(x,y){
-    if(is.element("pcaPP", installed.packages()[,1])){ 
-        tau <- pcaPP::cor.fk(x,y)
-    }else{
-        cat("\nPackage pcaPP is not installed, use stats:cor\n")
-        tau <- cor(x,y, method="kendall")
-    }
-    ## use="pairwise.complete.obs")
-    ## tau <- cor.fk(x)
+    tau <- pcaPP::cor.fk(x,y)
     r <- sin(pi*tau/2)
     return(r)
 }
